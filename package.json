@@ -1,0 +1,30 @@
+{
+  "name": "pagelock",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-decrypter": "webpack --config=webpack.decrypter.config.js",
+    "build": "webpack",
+    "build-all": "npm run build-decrypter && npm run build",
+    "start": "npm run build-decrypter && webpack-dev-server --content-base=dist",
+    "clean": "rm -rf ./dist && rm -rf ./dist.decrypter",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.1.0",
+    "crypto-js": "^3.1.9-1",
+    "handlebars": "^4.0.10",
+    "raw-loader": "^0.5.1",
+    "uuid": "^3.1.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
