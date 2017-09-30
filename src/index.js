@@ -7,13 +7,13 @@ const generateKeyButton = document.getElementById('generate-key');
 const copyKeyToClipboard = document.getElementById('copy-key-to-clipboard');
 
 const input = document.getElementById('input');
-const upload = document.getElementById('upload');
-const uploadFileButton = document.getElementById('upload-file');
+const select = document.getElementById('select');
+const selectFileButton = document.getElementById('select-file');
 const encryptButton = document.getElementById('encrypt');
 
 const output = document.getElementById('output');
 const previewButton = document.getElementById('preview');
-const downloadButton = document.getElementById('download');
+const saveButton = document.getElementById('save');
 const copyOutputToClipboardButton = document.getElementById('copy-output-to-clipboard');
 
 function resetOutput() {
@@ -35,22 +35,22 @@ copyKeyToClipboard.addEventListener('click', (event) => {
     document.execCommand('copy');
 });
 
-upload.addEventListener('change', (event) => {
-    if (upload.files && upload.files[0]) {
+select.addEventListener('change', (event) => {
+    if (select.files && select.files[0]) {
         const reader = new FileReader();
-        reader.readAsText(upload.files[0]);
+        reader.readAsText(select.files[0]);
         reader.onload = (event) => {
             input.value = event.target.result;
             encryptButton.click();
         };
     }
-    upload.value = null;
+    select.value = null;
 });
 
-uploadFileButton.addEventListener('click', (event) => {
+selectFileButton.addEventListener('click', (event) => {
     event.preventDefault();
     resetOutput();
-    upload.click();
+    select.click();
 });
 
 encryptButton.addEventListener('click', (event) => {
@@ -75,14 +75,14 @@ copyOutputToClipboardButton.addEventListener('click', (event) => {
     document.execCommand('copy');
 });
 
-downloadButton.addEventListener('click', (event) => {
+saveButton.addEventListener('click', (event) => {
     event.preventDefault();
     const blob = new Blob([output.value], {
         type: 'text/html'
     });
 
     const defaultFilename = 'pagelock-' + Uuid.v4() + '.html';
-    const filename = prompt('Download as...', defaultFilename);
+    const filename = prompt('Save as...', defaultFilename);
 
     if (filename) {
         const a = document.createElement('a');

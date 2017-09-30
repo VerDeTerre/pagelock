@@ -37,11 +37,11 @@ The key or password is used to encrypt your document. When you load the page, th
 
 ### Input
 
-The document you wish to encrypt goes in the Input text box. You may paste text directly or upload a file from your computer by clicking the "Upload File" button. The "Encrypt" button will use the key specified above to encrypt the input and send it the output, discussed below.
+The document you wish to encrypt goes in the Input text box. You may paste text directly or select a file from your computer by clicking the "Select File" button. The "Encrypt" button will use the key specified above to encrypt the input and send it the output, discussed below.
 
 ### Output
 
-The Output text box contains the full contents of the self-decryptable web page. The "Preview" button will open the encrypted page in a new window. The "Download" button will prompt you to enter a filename (with a randomly generated default) and will save the file to your downloads folder. The "Copy to Clipboard" button will send the text to the system clipboard, which can then be pasted into a file. You may also copy the text directly.
+The Output text box contains the full contents of the self-decryptable web page. The "Preview" button will open the encrypted page in a new window. The "Save" button will prompt you to enter a filename (with a randomly generated default) and will save the file to your downloads folder. The "Copy to Clipboard" button will send the text to the system clipboard, which can then be pasted into a file. You may also copy the text directly.
 
 ### Using the generated file
 
