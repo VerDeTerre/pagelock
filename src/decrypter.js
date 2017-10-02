@@ -24,6 +24,7 @@ function decrypt(key) {
         const plaintext = bytes.toString(CryptoJS.enc.Utf8);
         document.open();
         document.write(plaintext);
+        document.close();
     } catch (e) {
         const error = document.createElement('div');
         error.innerText = 'Could not decrypt page with specified key';
