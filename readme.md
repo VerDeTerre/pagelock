@@ -61,12 +61,12 @@ Keep in mind that anyone with the link including the key will be able to view th
 
 The encryption page may be viewed at
 
-<https://verdeterre.github.io/pagelock/demo/index.html>
+<https://jtbnntt.github.io/pagelock/demo/index.html>
 
 A sample encrypted file (with key `hello`) is available at
 
-<https://verdeterre.github.io/pagelock/demo/sample.html>
+<https://jtbnntt.github.io/pagelock/demo/sample.html>
 
 The file is decrypted automatically with this link:
 
-<https://verdeterre.github.io/pagelock/demo/sample.html?hello>
+<https://jtbnntt.github.io/pagelock/demo/sample.html?hello>
